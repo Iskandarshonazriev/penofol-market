@@ -47,9 +47,9 @@ const products = [
 <rect x="0.5" y="0.5" width="54" height="54" stroke="#707070"/>
 </svg>
 <section>
-    <div className='flex gap-[20px] items-center text-center mt-[50px] shadow-2xl'>
+    <div className='flex gap-[20px] items-center text-center mt-[50px] shadow-2xl p-[20px]'>
 {products.map(item=>(
-    <div   key={item.id}>
+    <div    key={item.id}>
 <img src={item.avatar} alt="" /><br />
 <p>{item.title}</p><br />
 <h3 className='text-[30px] text-blue-500'><b>{item.price} ₽/шт</b></h3><br /><br />
@@ -75,6 +75,8 @@ const products = [
 </svg>
 
       </section>
+      
     </div>
+    
   )
 }
